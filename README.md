@@ -53,7 +53,7 @@ python3 main.py
 
 ## ⚙️ Configuración (API key y cookies)
 
-Para descargar canciones y letras necesitas configurar tu propia API key de Genius y, opcionalmente, cookies de YouTube. Las instrucciones detalladas están dentro de la app, en **Ajustes**. Estos datos se guardan localmente en `~/.local/share/vorem-music/` en tu equipo — nunca se suben a este repositorio ni se comparten con nadie.
+Para descargar canciones y letras necesitas configurar tu propia API key de Genius y, opcionalmente, cookies de YouTube. Las instrucciones detalladas están dentro de la app, en **Ajustes**. Estos datos se guardan localmente en `~/.local/share/vorem-music/` en tu equipo.
 
 ## 🗑️ Desinstalar
 
@@ -66,7 +66,7 @@ rm -rf deluxevor-music              # la carpeta donde clonaste el repo
 
 ## 💜 Apoya el proyecto
 
-Sígueme en [TikTok @vorem_of](https://www.tiktok.com/@vorem_of) y únete al [grupo de WhatsApp](https://chat.whatsapp.com/LISZACfu4Xo0irilkwofmN?s=cl&p=a&mlu=4) para dudas, sugerencias o reportar errores.
+Sígueme en [TikTok @vorem_of](https://www.tiktok.com/@vorem_of) y únete al [grupo de WhatsApp](https://chat.whatsapp.com/LISZACfu4Xo0irilkwofmN) para dudas, sugerencias o reportar errores.
 
 ## 📄 Licencia
 
