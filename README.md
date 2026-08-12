@@ -21,7 +21,7 @@
 
 ## 📦 Requisitos
 
-- Linux (Ubuntu/Debian, Fedora, Arch/Manjaro u openSUSE — el instalador detecta tu distro automáticamente).
+- Linux (Ubuntu/Debian, Fedora Workstation o Atomic/Silverblue/Kinoite, Arch/Manjaro, openSUSE — el instalador detecta tu sistema automáticamente, incluyendo distros atómicas/inmutables).
 - Python 3.10 o superior.
 - Conexión a internet solo la primera vez, para instalar dependencias.
 
@@ -36,12 +36,14 @@ chmod +x install.sh
 
 El script `install.sh`:
 
-1. Detecta tu distribución (apt, dnf, pacman o zypper) e instala GTK4, libadwaita, GStreamer y ffmpeg.
-2. Crea un entorno virtual de Python (`venv/`) e instala las dependencias (`yt-dlp`, `Pillow`, `mutagen`).
+1. Detecta automáticamente tu tipo de sistema:
+   - **Distro tradicional** (Ubuntu/Debian, Fedora Workstation, Arch/Manjaro, openSUSE): instala GTK4, libadwaita, GStreamer y ffmpeg con tu gestor de paquetes (apt/dnf/pacman/zypper).
+   - **Distro atómica/inmutable** (Fedora Silverblue, Fedora Kinoite, uBlue, openSUSE Aeon/Kalpa): como estos sistemas no permiten instalar paquetes directamente, el script usa [Distrobox](https://distrobox.it/) para crear un pequeño contenedor Fedora (sin tocar tu sistema base ni requerir reinicio) e instala todo ahí dentro.
+2. Crea un entorno virtual de Python e instala las dependencias (`yt-dlp`, `Pillow`, `mutagen`).
 3. Instala el icono de la app en tu sistema.
-4. Crea un acceso directo en tu menú de aplicaciones — busca **"Deluxevor Music"** y ábrelo como cualquier otro programa.
+4. Crea un acceso directo en tu menú de aplicaciones — busca **"Deluxevor Music"** y ábrelo como cualquier otro programa (en sistemas atómicos, se abre automáticamente a través del contenedor, sin que notes la diferencia).
 
-Te pedirá tu contraseña de administrador (`sudo`) solo para instalar los paquetes del sistema.
+Te pedirá tu contraseña de administrador (`sudo`) solo para instalar los paquetes del sistema (o, en sistemas atómicos, dentro del contenedor).
 
 ### Ejecutar manualmente (sin acceso directo)
 
@@ -62,6 +64,12 @@ rm -rf ~/.local/share/icons/hicolor/*/apps/vorem-music.png
 rm -f ~/.local/share/applications/vorem.desktop
 rm -rf ~/.local/share/vorem-music   # borra también tu biblioteca, cookies y ajustes guardados
 rm -rf deluxevor-music              # la carpeta donde clonaste el repo
+```
+
+Si instalaste en un sistema atómico/inmutable (Fedora Silverblue/Kinoite, etc.), también puedes borrar el contenedor de Distrobox:
+
+```bash
+distrobox rm deluxevor-music-box
 ```
 
 ## 💜 Apoya el proyecto
