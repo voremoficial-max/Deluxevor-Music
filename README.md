@@ -66,7 +66,7 @@ rm -rf deluxevor-music              # la carpeta donde clonaste el repo
 
 ## 💜 Apoya el proyecto
 
-Sígueme en [TikTok @vorem_of](https://www.tiktok.com/@vorem_of) y únete al [grupo de WhatsApp](https://chat.whatsapp.com/LISZACfu4Xo0irilkwofmN) para dudas, sugerencias o reportar errores.
+Sígueme en [TikTok @vorem_of](https://www.tiktok.com/@vorem_of) y únete al [grupo de WhatsApp](https://chat.whatsapp.com/GDtzosa0fEllBrSDchQruB) para dudas, sugerencias o reportar errores.
 
 ## 📄 Licencia
 
