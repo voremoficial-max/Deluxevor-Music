@@ -1,0 +1,6 @@
+# Dependencias Python puras. GTK4/Libadwaita/GStreamer se instalan con dnf.
+mutagen>=1.47,<2
+
+Pillow>=10,<12
+
+yt-dlp>=2025.01.0,<2027

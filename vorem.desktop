@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Deluxevor Music
+Comment=Reproductor de música local moderno y ligero
+Exec=python3 main.py
+Icon=vorem-music
+Terminal=false
+Categories=Audio;Music;Player;GTK;
+StartupNotify=true

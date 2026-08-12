@@ -1,0 +1,18 @@
+# Entorno virtual y dependencias
+venv/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Datos locales (si alguna vez se generan dentro del repo por error)
+*.db
+*.log
+cookies.txt
+logs/
+
+# Editor / SO
+.vscode/
+.idea/
+*.swp
+.DS_Store
