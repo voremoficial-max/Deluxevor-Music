@@ -28,7 +28,7 @@
 ## 🚀 Instalación
 
 ```bash
-git clone https://github.com/<tu-usuario>/deluxevor-music.git
+git clone https://github.com/<voremoficial-max>/deluxevor-music.git
 cd deluxevor-music
 chmod +x install.sh
 ./install.sh
