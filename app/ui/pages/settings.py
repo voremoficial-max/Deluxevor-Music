@@ -257,7 +257,7 @@ class SettingsPage(Gtk.Box):
         buttons = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=8)
 
         whatsapp = Gtk.LinkButton(
-            uri="https://chat.whatsapp.com/LISZACfu4Xo0irilkwofmN?s=cl&p=a&mlu=4",
+            uri="https://chat.whatsapp.com/GDtzosa0fEIIBrSDchQruB",
             label="Grupo de WhatsApp",
         )
         whatsapp.add_css_class("suggested-action")
