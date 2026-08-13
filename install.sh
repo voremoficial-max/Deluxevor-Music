@@ -223,8 +223,11 @@ install_atomic() {
 
 # ---------------------------------------------------------------------------
 # Punto de entrada: decide qué ruta usar.
+# Se comprueban dos señales porque no todas las imágenes atómicas (Bazzite,
+# uBlue, Silverblue, Kinoite...) exponen /run/ostree-booted de la misma forma;
+# la presencia del binario rpm-ostree es igual de confiable.
 # ---------------------------------------------------------------------------
-if [ -f /run/ostree-booted ]; then
+if [ -f /run/ostree-booted ] || command -v rpm-ostree >/dev/null 2>&1; then
     install_atomic
 else
     install_native
