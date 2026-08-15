@@ -6,7 +6,7 @@
 
 <p align="center">
   Reproductor de música local moderno y ligero para Linux, hecho con GTK4 + libadwaita.<br>
-  Totalmente gratuito. Versión 3. By <b>vorem</b>.
+  Totalmente gratuito. Versión 1.3. By <b>vorem</b>.
 </p>
 
 ---
