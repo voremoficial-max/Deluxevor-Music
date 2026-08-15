@@ -18,16 +18,13 @@
 - Descarga de canciones y letras (usa tu propia API key de Genius y cookies de YouTube, configurables desde Ajustes).
 - **Multi-descarga**: lanza varias descargas a la vez con "Descargar todo", o una por una desde cada resultado; todas corren en paralelo y cada una muestra su propio nombre y porcentaje en tiempo real dentro de "Descargas en curso".
 - **Minireproductor flotante** con el atajo **Control + J**: una ventana pequeña e independiente con la carátula, los controles de reproducir/pausar/anterior/siguiente y la barra de progreso de la canción, para tenerla siempre a mano sin ocupar toda la pantalla.
-- Reproducción en el orden real de tu lista por defecto; el modo aleatorio, cuando está activado, mezcla las canciones — y al desactivarlo la cola vuelve de inmediato al orden original.
 - Visualizador de espectro, temas de color, animaciones configurables.
 - Interfaz nativa GTK4/libadwaita, ligera y rápida.
 
 ## 🆕 Novedades de la versión 3
 
-- Se **retiró por completo la integración con servicios de streaming externos**: Deluxevor Music ahora trabaja exclusivamente con tu biblioteca local y tus descargas; las playlists son 100% locales.
 - Se añadió la **multi-descarga**: puedes descargar varios resultados de búsqueda al mismo tiempo, y la pestaña "Descargas en curso" ahora se abre automáticamente al iniciar una descarga, mostrando el nombre y el porcentaje de avance de cada una sin necesidad de cambiar de pestaña a mano.
 - Se añadió el **minireproductor flotante** (Control + J): carátula, transporte y barra de progreso en una ventana pequeña, independiente de la ventana principal.
-- Se corrigió el botón de reproducción para que las canciones siempre suenen en el orden en que aparecen en la lista, salvo que el aleatorio esté activado — incluido el caso de apagar el aleatorio a mitad de una reproducción, donde antes se quedaba arrastrando el orden mezclado.
 
 ## 📦 Requisitos
 
