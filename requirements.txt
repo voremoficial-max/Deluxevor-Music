@@ -1,0 +1,10 @@
+# Dependencias Python puras. GTK4/Libadwaita/GStreamer se instalan con dnf.
+mutagen>=1.47,<2
+
+Pillow>=10,<12
+
+# yt-dlp >=2026.8.19 es obligatorio: corrige el fallo masivo de agosto 2026
+# donde YouTube devolvía HTTP 403 en el cliente "android_vr" que yt-dlp
+# usaba por defecto en versiones anteriores. Versiones más viejas fallan
+# casi siempre al descargar.
+yt-dlp>=2026.8.19,<2027
